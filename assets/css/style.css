@@ -1,0 +1,46 @@
+body{
+    font-family:source sans pro,sans-serif;
+    background-color:#f8fafd
+}
+.cmb-header-shadow{
+    background-color: #032541;
+}
+.nav-link{
+    color:white;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 3px;
+}
+.nav-link:hover{
+    color:white;
+}
+
+.nav-link:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+  }
+.nav-link:hover:after {
+    width: 100%;
+    background: white;
+}
+.Movies,
+.tv-show,
+.people{
+    text-decoration-line: underline;
+    text-underline-offset: 8px;
+}
+.cbm-section-shadow{
+    box-shadow:0 3px 15px #63809e1f;
+}
+.container{
+    max-width:1030px;
+}
+.card-body {
+    border-radius: 10px;
+    background-color: white;
+}
