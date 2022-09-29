@@ -29,7 +29,7 @@ body{
     background: white;
 }
 .Movies,
-.tv-show,
+.tv,
 .people{
     text-decoration-line: underline;
     text-underline-offset: 8px;
