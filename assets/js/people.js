@@ -71,7 +71,7 @@ $('#searchButton').click((e) => {
             const bold = $('<b></b>').text(movie.name);
             title.append(bold);
 
-            //rating
+            //--
             const rating = $('<div class="fs-6 text-muted mt-0"></div>').text(`${movie.known_for_department}`);
             col.append(rating);
             return article;
