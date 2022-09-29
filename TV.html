@@ -11,9 +11,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <!-- end -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap"
         rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/star.js"></script>
     <link rel="stylesheet" href="assets/css/style.css">
 
     <title>TMDB - TV Shows</title>
@@ -66,7 +69,7 @@
         <br>
         <div class="container">
             <div class="row row-cols-2 row-cols-sm-2 row-cols-md-5 g-4 justify-content-center" id="result">
-                <!-- <article>
+                <article>
                     <a class="text-decoration-none text-reset" href="#">
                         <div class="card cbm-section-shadow rounded-3 border-0 h-100 overflow-hidden">
                             <div class="card-img-relative">
@@ -76,22 +79,28 @@
                                 <div class="col-12">
                                     <h3 class="fs-6 fw-600 mb-0 entry-title" style="font-size: 1.08rem;"><b>Spider-Man:
                                             No Way Home</b></h3>
+
+                                    <span class="stars" data-rating="2" data-num-stars="5"></span>
                                     <div class="fs-6 text-muted mt-0">
-                                        <div>Rating : 8</div>
+                                        <div>ドラえもん</div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </a>
-                </article> -->
+                </article>
             </div>
         </div>
     </div>
     <br><br>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(function () {
+            $('.stars').stars();
+        });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="assets/js/TV.js"></script>
+    <script src="assets/js/tv.js"></script>
 </body>
 
 </html>

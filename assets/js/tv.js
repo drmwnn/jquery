@@ -71,7 +71,17 @@ $('#searchButton').click((e) => {
             title.append(bold);
 
             //rating
-            const rating = $('<div class="fs-6 text-muted mt-0"></div>').text(`Rating: ${movie.vote_average}`);
-            col.append(rating);
+            const stars =(movie.vote_average/2);
+            var star = $(`<span class="stars" data-rating="${stars}" data-num-stars="5">aa</span>`);
+            col.append(star);
+            $(function () {
+                $('.stars').stars();
+            }); 
+
+            //original name
+            const original = $('<div class="fs-6 text-muted mt-0"></div>').text(`${movie.original_name}`);
+            col.append(original);
+            
             return article;
-        }       
+        }  
+           
