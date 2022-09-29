@@ -72,7 +72,7 @@ $('#searchButton').click((e) => {
 
             //rating
             const stars =(movie.vote_average/2);
-            var star = $(`<span class="stars" data-rating="${stars}" data-num-stars="5">aa</span>`);
+            var star = $(`<span class="stars" data-rating="${stars}" data-num-stars="5"></span>`);
             col.append(star);
             $(function () {
                 $('.stars').stars();
